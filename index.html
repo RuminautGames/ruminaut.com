@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ruminaut Games</title>
+<meta name="description" content="Ruminaut Games, a small game studio in Wellington, New Zealand.">
+<link rel="preload" href="fonts/barlow-semibold-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  @font-face {
+    font-family: "Barlow";
+    src: url("fonts/barlow-latin.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Barlow";
+    src: url("fonts/barlow-semibold-latin.woff2") format("woff2");
+    font-weight: 600;
+    font-display: swap;
+  }
+  :root {
+    --paper: #f6f3ec;
+    --ink: #1f2a44;
+    --faint: #5c6478;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #161b26;
+      --ink: #e8e4da;
+      --faint: #9aa0ad;
+    }
+  }
+  html { background: var(--paper); color: var(--ink); }
+  body {
+    max-width: 32rem;
+    margin: 18vh auto 4rem;
+    padding: 0 1.25rem;
+    font: 1.125rem/1.6 "Barlow", system-ui, sans-serif;
+  }
+  h1 { font-size: 2rem; font-weight: 600; line-height: 1.2; margin: 0 0 1rem; }
+  p { margin: 0 0 1rem; }
+  a { color: inherit; text-underline-offset: 0.2em; }
+  footer { margin-top: 3rem; color: var(--faint); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<h1>Ruminaut Games</h1>
+<p>A small game studio in Wellington, New Zealand.</p>
+<p><a href="mailto:hello@ruminaut.com">hello@ruminaut.com</a></p>
+<footer>© 2026 Ruminaut Games Limited</footer>
+</body>
+</html>
