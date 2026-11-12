@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ruminaut Games</title>
+<meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#010180" media="(prefers-color-scheme: dark)">
 <meta name="description" content="Ruminaut Games, a small game studio in Wellington, New Zealand.">
 <link rel="preload" href="fonts/barlow-semibold-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/barlow-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -22,31 +24,38 @@
   }
   :root {
     --paper: #f6f3ec;
-    --ink: #1f2a44;
-    --faint: #5c6478;
+    --ink: #010180;
+    --faint: #4a4f8a;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --paper: #161b26;
-      --ink: #e8e4da;
-      --faint: #9aa0ad;
+      --paper: #010180;
+      --ink: #ffffff;
+      --faint: #b8bce6;
     }
   }
   html { background: var(--paper); color: var(--ink); }
   body {
     max-width: 32rem;
-    margin: 18vh auto 4rem;
+    margin: 12vh auto 4rem;
+    text-align: center;
     padding: 0 1.25rem;
     font: 1.125rem/1.6 "Barlow", system-ui, sans-serif;
   }
-  h1 { font-size: 2rem; font-weight: 600; line-height: 1.2; margin: 0 0 1rem; }
+  h1 { margin: 0 0 2.5rem; }
+  h1 img { display: block; width: min(20rem, 80vw); height: auto; margin: 0 auto; }
   p { margin: 0 0 1rem; }
   a { color: inherit; text-underline-offset: 0.2em; }
   footer { margin-top: 3rem; color: var(--faint); font-size: 0.9rem; }
 </style>
 </head>
 <body>
-<h1>Ruminaut Games</h1>
+<h1>
+  <picture>
+    <source srcset="images/secondary-logo-slogan.svg" media="(prefers-color-scheme: dark)">
+    <img src="images/primary-logo-slogan.svg" alt="Ruminaut Games" width="1310" height="1350">
+  </picture>
+</h1>
 <p>A small game studio in Wellington, New Zealand.</p>
 <p><a href="mailto:hello@ruminaut.com">hello@ruminaut.com</a></p>
 <footer>© 2026 Ruminaut Games Limited</footer>
